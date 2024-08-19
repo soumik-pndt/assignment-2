@@ -3,9 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <!-- font-awesome-cdn-link -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
-        <!-- css-link -->
        <link rel="stylesheet" href="styles/style.css">
     <title>assignment-2</title>
 </head>
@@ -55,7 +53,6 @@
             </div>
          </section>
     </header>
-    <section class="main">
         <section class="main">
             <!-- habits section starts here -->
             <section class="habits">
@@ -95,6 +92,119 @@
           <img src="images/run.jpg" alt="">
         </div>
      </section>
+      <!-- BMI Calculator section -->
+      <section class="BMI-Calculator">
+        <div class="bmi-content">
+            <h2>BMI Calculator</h2>
+            <p>The Body Mass Index (BMI) Calculator can be used to calculate BMI value and corresponding weight status while taking age into consideration. Use the "Metric Units" tab for the International System of Units or the "Other Units" tab to convert units into either US or metric units. Note that the calculator also computes the Ponderal Index in addition to BMI, both of which are discussed below in detail.</p> 
+        </div>
+     </section>
+       <!-- BMI Calculator section end-->
+      <section class="bmi-calculator-chart">
+        <div class="bmi-calculator-parent">
+          <div class="calculator-chart">
+            <h2>BMI Calculator Chart</h2>
+              <table>
+                <thead>
+                    <th>BMI</th>
+                    <th>Weight Status</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Below 18.5</td>
+                        <td>Underweight</td>
+                    </tr>
+                    <tr>
+                        <td>18.5 - 24.9</td>
+                        <td>Healthy</td>
+                    </tr>
+                    <tr>
+                        <td>25.0 - 29.9</td>
+                        <td>Overweight</td>
+                    </tr>
+                    <tr>
+                        <td>30.0 - and above</td>
+                        <td>Obese</td>
+                    </tr>
+                </tbody>
+              </table>
+            </div>
+        <div class="formCalculate">
+            <h1>Calculate your BMI</h1>
+            <p> We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+            <!--formSection start-->
+            <div class="formSection">
+              <li><input type="text" placeholder="Height/cm"></li>
+              <li><input type="text" placeholder="Weight/kg"></li>
+              <li><input type="text" placeholder="Age"></li>
+              <li><select name="" id="">
+                <option value="Sex">sex</option>
+                <option value="Male">mele</option>
+                <option value="Female">female</option>
+              </select>
+              </li>
+              <li class="list-factor">
+              <select name="" id="">
+                <option value="">Select an activity factor</option>
+                <option value="">Workout</option>
+                <option value="">Free hand exercise</option>
+              </select>
+            </li>
+            </div>
+            <button type="submit">Calculate</button>
+        </div>
+      </div>
+  </section>
+  <!-- BMI Calculator Chart section end -->
+    <!-- team section -->
+    <section class="team">
+        <h2>Meet Our Team</h2>
+        <p>In our team everyone is a professional trainer. They are best in their own field.</p>
+        <div class="card-items">
+            <div class="card-item" id="item1">
+                <img src="images/trainer1.png" alt="">
+                <div class="content">
+                  <h3>Jerome Bell</h3>
+                  <h4>Trainer</h4>
+                </div>
+            </div>
+            <div class="card-item" id="item2">
+                <img src="images/trainer2.png" alt="">
+                <div class="content">
+                  <h3>Cameron Williamson</h3>
+                  <h4>Trainer</h4>
+                </div>
+            </div>
+            <div class="card-item" id="item3">
+                <img src="images/image 3.png" alt="">
+               <div class="content">
+                <h3>Darrell Steward</h3>
+                <h4>Trainer</h4>
+               </div>
+            </div>
+            <div class="card-item" id="item4">
+                <img src="images/trainer4.png" alt="">
+                <div class="content">
+                    <h3>Dianne Russell</h3>
+                    <h4>Trainer</h4>
+                </div>
+            </div>
+            <div class="card-item" id="item5">
+                <img src="images/trainer5.png" alt="">
+                <div class="content">
+                    <h3>Cody Fisher</h3>
+                    <h4>Trainer</h4> 
+                </div>
+            </div>
+            <div class="card-item" id="item6">
+                <img src="images/trainer6.png" alt="">
+                <div class="content">
+                    <h3>Theresa Webb</h3>
+                    <h4>Trainer</h4>
+                </div>
+            </div>
+        </div>
+    </section>
     </section>
 </body>
 </html>
