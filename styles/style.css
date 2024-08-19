@@ -301,3 +301,85 @@ body{
     margin-top:20px;
 }  
 }
+/* mile easily style */
+.main .mile-easily{
+    width:90%;
+    min-height:400px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px auto;
+    border:none;
+    border-radius:10px;
+    background-color:rgba(78, 77, 77, 0.808);
+}
+.mile-easily .mile-easily-content{
+    width:50%;
+    height:100%;
+    margin:30px;
+}
+.mile-easily-content h2{
+    width:300px;
+    color:var(--color);
+    font-size:2.5rem;
+    font-weight:800;
+    margin-bottom:10px;
+}
+.mile-easily-content p{
+    width:450px;
+    color:var(--text-color);
+    font-size:1.2rem;
+    margin-bottom:10px;
+}
+.mile-easily-content button{
+    width:250px;
+    height:50px;
+    border:none;
+    border-radius:25px;
+    color:var(--color);
+    font-size:1.2rem;
+    margin-top:20px;
+    background-color:var(--button-bg);
+}
+.mile-easily .mile-easily-image{
+    width:50%;
+    height:100%;
+}
+.mile-easily-image img{
+    width:75%;
+    height:350px;
+    margin-top:10px;
+    border-radius:15px;
+    transform: translateX(100px);
+}
+/* mile-easily responsive design */
+@media screen and (max-width:576px) {
+   .main .mile-easily{
+       flex-direction: column;
+       gap:20px;
+    }
+    .mile-easily .mile-easily-content{
+        width:90%;
+    }
+    .mile-easily-content h2{
+        width:70%;
+        font-size:2rem;
+    }
+    .mile-easily .mile-easily-content p{
+        width:90%;
+        font-size:1rem;
+    }
+    .mile-easily-content>button{
+        width:300px;
+        margin-left:20px;
+    }
+    .mile-easily .mile-easily-image{
+        width:90%;
+        padding-bottom:30px;
+    }
+    .mile-easily .mile-easily-image img{
+        width:100%;
+        height:100%;
+        transform: translateX(0px);
+    }
+}
