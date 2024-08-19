@@ -1,7 +1,5 @@
 /* google font family link */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Italianno&display=swap');
-
-/* miama font family cdn link */
   @import url('https://fonts.cdnfonts.com/css/miama');
 *{
     margin: 0%;
@@ -27,7 +25,6 @@ body{
 /* header-style here*/
 .header{
     max-width:100%;
-    min-height:600px;
     background-color:rgba(0,0,0,0.9);
 }
 /* navbar style here */
@@ -79,14 +76,12 @@ body{
 /* bannar style here */
 .header .bannar{
   width:90%;
-  min-height:500px;
   display: flex;
   justify-content: space-between;
   margin:0px auto;
 }
 .bannar-content{
-   width:50%;
-   height:500px;
+
    color:var(--color);
    display:flex;
    flex-direction:column;
@@ -193,64 +188,10 @@ body{
     font-size:2rem;
     color:var(--color);
 }
-.box-2-content>p{
+.box-2-content p{
     font-size:1rem;
     color:var(--text-color);
 }
-/* header part responsive */
-@media screen and (max-width:576px) {
- .header{
-    min-height:100vh;
- }
-/* navbar responsive */
- .navbar h1{
-    font-size:3rem;
- }
-.navbar ul{
-    display:none;
-}
-.navbar .menu-icon a{
-    display:block;
-}
-/* bannar responsive   */
-.bannar{
-    display: flex;
-    flex-direction:row;
-    align-items: center;
-    justify-content:space-around;
-}
-.bannar-content{
-    width:100%;
-    height:500px;
-}
-.bannar-content h1,p{
-    width:70%;
-    font-size:2.8rem;
-}
-.bannar-content button{
-    width:150px;
-    height:60px;
-    font-size:1.2rem;
-    border-radius:25px;
-}
-.bannar .bannar-image{
-    width:100%;
-    position: absolute;
-}
-.bannar-image .box-1{
-    left:18%;
-    bottom:32%;
-}
-.bannar-image .box-2{
-    top:20%;
-    right:8%;
-}
-.box-1 .circal i{
-    display:block;
-}
-
-}
-
 /* main section style */
 .main{
     width:100%;
@@ -266,8 +207,7 @@ body{
     text-align: center;
     font-size:2rem;
     color:var(--color);
-    margin-bottom:10px;
-    
+    margin-bottom:10px;   
 }
 .habits p{
     text-align: center;
@@ -291,14 +231,6 @@ body{
 }
 .box-item img{
     border-radius:50%;
-}
-
-/* habits responsive design */
-@media screen and (max-width:576px) {
-.habits .grid-boxs{
-    grid-template-columns:repeat(1,1fr);
-    margin-top:20px;
-}  
 }
 /* mile easily style */
 .main .mile-easily{
@@ -380,7 +312,6 @@ body{
     } 
     
 }
-/* BMI Calculator Chart style */
 .bmi-calculator-chart {
   max-width:100%;
   min-height:600px;
@@ -547,19 +478,143 @@ table td{
 .content h4{
     color:var(--text-color);
 }
+/* footer section style */
  
-/* team section responsive design */
+.footer{
+    max-width:100%;
+    min-height:500px;
+    background-color:rgba(163, 159, 159, 0.356);
+    
+ }
+ .footer .footer-content{
+    width:90%;
+    min-height:300px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin:50px auto;
+ }
+ .footer-content .box1{
+   width:50%;
+ }
+ .box1 h1{
+    font-size:4rem;
+    font-weight:bold;
+    color:rgba(240, 5, 5, 0.932);
+
+ }
+ .box1 p{
+   width:70%;
+   color:var(--text-color);
+ }
+ .footer-description{
+    width:40%;
+    display:flex;
+    justify-content: space-around;
+ }
+ .box2{
+    width:50%;
+ }
+ .footer .box2 h2,.box3 h2{
+    width:200px;
+    font-size:2rem;
+    color:var(--color);
+    font-weight:bold;
+ }
+  .box2 li{
+    list-style:none;
+    font-size:1.2rem;
+    color:var(--text-color);
+    margin-top:20px;
+ }
+ .box3 li{
+    list-style:none;
+    font-size:1.2rem;
+    color:var(--text-color);
+    margin-top:20px;
+   
+ }
+ .copyright{
+    width:90%;
+    height:100px;
+    margin:0px auto;
+ }
+ .copyright hr{
+    color:var(--text-color);
+    opacity:0.4;
+ }
+ .copyright p{
+    margin-top:20px;
+    text-align: center;
+    font-size:1.2rem;
+    color:var(--text-color);
+ }
+
+/* responsive design starts here */
 @media screen and (max-width:576px) {
-    .team p{
-        width:90%;
-    }
-    .team .card-items{
-        grid-template-columns: repeat(1,1fr);
-    }
+    /* navbar responsive */
+ .navbar h1{
+    font-size:3rem;
+ }
+.navbar ul{
+    display:none;
+}
+.navbar .menu-icon a{
+    display:block;
+}
+.header{
+    min-height:100vh;
+ }
+
+   /* banner responsive  */
+   .bannar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.bannar-content{
+    width:100%;
+    height:600px;
+    justify-content: flex-start;
+}
+.bannar-content h1,p{
+    width:70%;
+    font-size:2.8rem;
+}
+.bannar-content button{
+    width:150px;
+    height:60px;
+    font-size:1.2rem;
+    border-radius:25px;
+}
+.bannar .bannar-image{
+    width:100%;
+    margin-top: 30px;
+}
+.bannar-image .box-1{
+    left:18%;
+    bottom:32%;
+}
+.bannar-image .box-2{
+    top:20%;
+    right:8%;
+}
+.box-1 .circal i{
+    display:block;
 }
 
-/* BMI-Calculator-chart resposive design */
-@media screen and (max-width:576px) {
+/* habit responsive */
+.habits .grid-boxs{
+    grid-template-columns:repeat(1,1fr);
+    margin-top:20px;
+} 
+.habits p{
+    margin-left: 50px;
+}
+.box-item p {
+   margin-left: 50px;
+}
+    /* mile easily responsive */
     .main .mile-easily{
         flex-direction: column;
         gap:20px;
@@ -588,6 +643,7 @@ table td{
          height:100%;
          transform: translateX(0px);
      }
+     /* bmi calculator responsive */
     .bmi-calculator-parent .calculator-chart{
         margin-bottom:0px;
     }
@@ -603,5 +659,33 @@ table td{
   margin-top:0px;
   margin-left:10px;
 }
+    /* team selection responsive */
+    .team p{
+        width:90%;
+    }
+    .team .card-items{
+        grid-template-columns: repeat(1,1fr);
+    }
+    /* footer responsive  */
+    .footer-content{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer-content .box1{
+        width:100%;
+    }
+    .footer-content .box1 p{
+        width:100%;
+        font-size:1rem;
+    }
+    .footer-content .footer-description{
+        width:100%;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top:30px;
+    }
+    .box2{
+        width:100%;
+     }
 }
 
